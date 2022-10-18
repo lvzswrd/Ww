@@ -1,0 +1,181 @@
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+         body{ background-color:lightgrey;line-height:1;}
+         div.main{margin: 50px auto; width: 1200px;}
+         h1{font-size: 40px; font-weight: 1000;font-style: italic;border: 5px groove #be9aad; text-align: center;}
+
+         p{font-size: 24px; border-bottom: 1px solid grey;}
+         .third{font-size:22px;}
+         span{font-size: 30px; font-weight:600;}
+         .alignment{text-align: center}
+         .second{font-size: 25px;}
+         h3{font-size: 23px; font-weight: 800;border: 5px groove #be9aad}
+         .center {text-align: center;}
+         a{background-color: rgba(255, 0, 255, 0.5);text-decoration: none; font-style: italic;}
+         h2{font-size: 25px; font-weight:800; border: 5px groove #be9aad}
+         .inline{display: inline-block; position:relative;}
+         .grey{background:rgba(255, 0, 255, 0.5); font-size:20p; outline: 1px solid black;}
+         .absolute{ position:absolute;
+          background-color: rgba(255,0,255,0.7);
+          width: 364px; 
+          height: 70px;
+          top:50%; 
+          left:50%; 
+          margin-top:-35px; 
+          margin-left:-182px; 
+          font-size:24px;}
+        .fixed{position:fixed; left:0; top:50%; bottom: 50%; right: 85%;}
+
+
+
+        .wrapper{background: pink; width: 1200px; margin: 0 auto; padding: 20px 0; outline: 2px solid black;}
+        .one { background:white; outline: 2px solid black; width:400px;}
+        
+        .pink{background: pink;}
+        .px8{width: 800px;}
+        .px4{width: 400px;}
+        .first{display: table-cell;}
+        .inb{display: inline-block;}
+        .font{font-size: 0;}
+        .vertical{vertical-align: top;}
+        .left{float: left;}
+        .after:after{content:"c"; font-size:1; color:pink;}
+        .outline{outline: 2px solid black;}
+        .clrl{clear: left;}
+
+
+
+        .flex{ display: flex; justify-content: center; background: pink;}
+        .pxf8{flex: 0 1 800px;}
+        .pxf4{flex: 0 1 400px;}
+        .grid_2{display: grid;}
+.box_a{grid-template-columns:repeat(3, 400px);}
+.box_b{grid-template-columns:800px 400px}
+.box_c{grid-template-columns: 400px 800px}
+.box_d{grid-template-columns:repeat(2,400px);}
+.box_e{grid-template-columns: 800px 400px}
+.box_f{grid-template-columns: repeat(2, 400px);}
+.grid{ display: grid; 
+
+    grid-template-areas: 
+    "A B C "
+    "D D F"
+    "D D G"
+    "E E G"
+    "E E H"
+    "W J J"
+    "W K L"
+    "M M Q"
+    "N P Q"
+    "O P Q"
+
+                         }
+
+.box_1{grid-area: A; background: rgba(255, 0, 255, 0.5);}
+.box_2{grid-area: B; background: rgba(255, 0, 255, 0.5);}
+.box_3{grid-area: C; background: rgba(255, 0, 255, 0.5);}
+.box_4{grid-area: D; background: rgba(255, 0, 255, 0.5);}
+.box_5{grid-area: E; background: rgba(255, 0, 255, 0.5);}
+.box_6{grid-area: F; background: rgba(255, 0, 255, 0.5);}
+.box_7{grid-area: G; background: rgba(255, 0, 255, 0.5);}
+.box_8{grid-area: H; background: rgba(255, 0, 255, 0.5);}
+.box_9{grid-area: W; background: rgba(255, 0, 255, 0.5);}
+.box_10{grid-area: J; background: rgba(255, 0, 255, 0.5);}
+.box_11{grid-area: K; background: rgba(255, 0, 255, 0.5);}
+.box_12{grid-area: L; background: rgba(255, 0, 255, 0.5);}
+.box_13{grid-area: M; background: rgba(255, 0, 255, 0.5);}
+.box_14{grid-area: N; background: rgba(255, 0, 255, 0.5);}
+.box_15{grid-area: O; background: rgba(255, 0, 255, 0.5);}
+.box_16{grid-area: P; background: rgba(255, 0, 255, 0.5);}
+.box_17{grid-area: Q; background: rgba(255, 0, 255, 0.5);}
+
+.pad{padding: 20px 30px;}
+.ul1{ margin: 50px auto; font-size: 30px;  border: 2px groove black;}
+.ul2{ position: absolute; top:100%; right:0; background:rgba(255, 0, 255, 1);border: 2px groove black; display: none;}
+ul li:hover ul{display: block;}
+.ul3{position: absolute; left: 100%; bottom: 0;background:rgba(255, 0, 255, 1); border: 2px groove black; display: none;}
+.ul4{position: absolute; right: 100%; bottom: 0;background:rgba(255, 0, 255, 1); border: 2px groove black;display: none;}
+.bor{border-bottom: 2px groove black;}
+.rel{position: relative;}
+
+.soc{
+    text-align: right;
+    font-size: 0;
+}
+.soc li{
+    display: inline-block;
+    font-size: 25px;
+}
+.soc li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+  
+    margin-top: 50px;
+    background: url(images/css_sprites.png);
+}
+ 
+ .soc li+li a {
+    background-position: -0px -0px;
+ }
+.soc li+li a{
+    background-position: -50px -0px;
+}
+.soc li+li+li a{
+    background-position: -100px -0px;
+}
+.soc li+li+li+li a{
+    background-position: -150px -0px;
+}
+
+
+
+
+
+
